@@ -2,11 +2,63 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Halaman Saya</title>
+  <title>Profil Mahasiswa</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #2193b0, #6dd5ed);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideIn 1s ease-out forwards;
+    }
+
+    h1 {
+      color: #1565c0;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Halo, Dunia!</h1>
-  <p>Nama: Hendrian Revinieldy Igu</p>
-  <p>NIM:1462100101</p>
+  <div class="card">
+    <h1>Selamat Datang 👋</h1>
+    <p><strong>Nama:</strong> Hendrian Revinieldy Igu</p>
+    <p><strong>NIM:</strong> 1462100101</p>
+    <p>Ini adalah halaman web dengan tema biru dan animasi halus.</p>
+    <div class="footer">&copy; 2025 | Tugas Web Server</div>
+  </div>
 </body>
 </html>
